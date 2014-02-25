@@ -1,0 +1,64 @@
+﻿<html>
+    <head>
+        <title>SAE2</title>
+        <link rel="stylesheet" href="css/vanilla.css" title="jQTouch">
+		
+        <script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jqtouch.min.js" type="text/javascript" charset="utf-8"></script>
+		
+        <script type="text/javascript" charset="utf-8">
+            var jQT = new $.jQTouch({
+                icon: 'jqtouch.png',                
+            });
+
+        </script>
+       
+    </head>
+    <body>
+		<div id="home">
+			<div class="toolbar">
+				<h1>SAE2</h1>
+			</div>
+			<ul class="rounded">
+				<li class="arrow"><a href="#historia">Nossa História</a></li>
+				<li class="arrow"><a href="#datas">Nossas Datas</a></li>
+			</ul>
+			
+		</div>
+		
+		<div id="historia">
+			<div class="toolbar">
+				<h1>Nossa História</h1>
+				<a href="#" class="button back">Voltar</a>
+			</div>
+			<h2>Angela e Eduardo</h2>
+			<p>O casal mais abençoado e bonito do mundo!</p>
+		</div>		
+
+		<div id="datas">
+			<div class="toolbar">
+				<h1>Nossas Datas</h1>
+				<a href="#" class="button back">Voltar</a>
+				<a href="#addData" class="button right">+</a>
+			</div>
+		</div>
+		
+		<div id="addData">
+			<div class="toolbar">
+				<h1>Add Data</h1>
+				<a href="#" class="button back">Voltar</a>
+			</div>
+			
+			<form method="post">
+                <ul class="rounded">
+                    <li><input type="text" placeholder="Data" name="data" id="data" autocapitalize="off" autocorrect="off" autocomplete="off" /></li>
+                    <li><input type="text" placeholder="Título" name="titulo" id="titulo" autocapitalize="off" autocorrect="off" autocomplete="off" /></li>
+                    <li><textarea placeholder="O que fizemos? :p" ></textarea></li>
+					
+					<li><input type="submit" class="submit" name="action" value="Salvar" /></li>
+                </ul>
+            </form>
+			
+		</div>
+    </body>
+</html>
